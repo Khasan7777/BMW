@@ -1,0 +1,231 @@
+.BigShowcaseBox{
+    /* gives the flexibility to the div */
+     display: flex;
+     /* gives the flexibility direction which is row */
+     flex-direction: row;
+     /* Give the background-color black */
+    background-color: black;
+    /* gives the width 100%  */
+    width: 100%;
+    /* gives the height according to the screen */
+    height: 100vh;
+    /* gives the font color white */
+    color: white;
+    /* gives equal spacing in between */
+    justify-content: space-between;
+  }
+ /* calls the classname of the box to be styled */
+  .MediumShowcaseBox{
+    /* gives the space from the left side of 85 pixels */
+    margin-left: 85px;
+    text-align: left;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+  .MediumShowcaseBox1{
+    margin-right: 85px;
+  }
+ 
+ .TitleShowcaseBox{
+   font-size: 64px;
+   font-weight: 800;
+   width: 80%;
+                        
+ }
+ 
+ .DescriptionShowcaseBox{
+   font-size: 20px;
+   font-weight: 300;
+   width: 80%;
+   text-align: justify;
+ }
+ 
+  .ImageBox{
+     display: flex;
+     flex-direction: row;
+     gap: 69px;
+     margin-bottom: 40px;
+  }
+ 
+  .Image1{
+   width: 300px;
+   height: 524px;
+   
+   overflow: hidden;
+  }
+  .Image1::before{
+   content: '';
+   position: absolute;
+   top: 110;
+   right: 23.85%;
+   width: 300px;
+   height:  524px;
+   background:rgba(0, 0, 0, 0.5)
+  }
+  .Image2::before{
+    content: '';
+    position: absolute;
+    top: 110;
+    right: 4.4%;
+    width: 301px;
+    height:  524px;
+   background:rgba(0, 0, 0, 0.5)
+   }
+   .Image3::before{
+    content: '';
+    position: absolute;
+    top: 110;
+    right: 4.4%;
+    width: 670px;
+   height: 355px;
+   background:rgba(0, 0, 0, 0.5)  
+   }
+
+ .Image1png{
+   height: 100%;
+   width: auto;
+  
+ }
+  .Image2{
+    width: 300px;
+   height: 524px;
+   overflow: hidden;
+  }
+ .Image2png{
+   display: block;
+   height: 100%;
+   width: auto;
+ }
+ .Image3{
+   width: 669px;
+   height: 355px;
+   display: flex; /* or display: block; choose based on your layout needs */
+   overflow: hidden;
+   margin: 0 auto; /* Center the element horizontally */
+  }
+ .Image3png{
+   width: 100%;
+   height: 100%;
+   object-fit: cover; /* or use 'contain' based on your preference */
+ 
+ }
+ .imageText1{
+ position: absolute;
+ top:136%;
+ right:30%;
+ font-size: 24px;
+ z-index:20;
+ transition: opacity 0.3s ease-in-out;
+ }  
+ .imageText12{
+   position: absolute;
+   top:137%;
+   right: 31%;
+   font-size: 14px;
+   z-index:20;
+   opacity: 0;
+   transition: opacity 0.3s ease-in-out;
+   cursor: pointer;
+   }  
+   .Image1:hover .imageText12{
+     opacity: 1;
+   }
+ .Image1:hover .imageText1{
+   opacity: 0;
+ }
+ .ImageText2{
+   position: absolute;
+   top: 136%;
+   font-size: 24px;
+   right:10%;
+   z-index:20;
+   transition: opacity 0.3s ease-in-out;
+ }
+ .ImageText22{
+   position: absolute;
+   top:137%;
+   font-size: 14px;
+   right:10.5%;
+   z-index:20;
+   transition: opacity 0.3s ease-in-out;
+   opacity: 0;
+   cursor: pointer;
+ }
+ 
+ .Image2:hover .ImageText22{
+   opacity: 1;
+ }
+ 
+ .Image2:hover .ImageText2{
+   opacity: 0;
+ }
+ .imageText3{
+   position: absolute;
+   top: 180%;
+   font-size: 24px;
+   right:20%;
+   z-index: 20;
+   transition: opacity 0.3s ease-in-out;
+ }
+ .balloon{
+   position: absolute;
+   top: 190%;
+   font-size: 14px;
+   right:16%;
+   z-index: 20;
+   transition: opacity 0.3s ease-in-out;
+   opacity: 0;
+   cursor: pointer;
+ }
+ .Image3:hover .balloon{
+   opacity: 1;
+ }
+ 
+ 
+ .Image3:hover .imageText3{
+   opacity: 0;
+ }
+ /* 
+  .Image3{
+   width: 669px;
+   height: 355px;
+   display: flex;
+   overflow: hidden;
+   object-position: center;
+   align-content: center;
+   align-items: center;
+  
+  }
+ 
+ .Image3png{
+   
+   width: 100%;
+   height: 300%;
+ } */
+ 
+  .ButtonShowcase {
+   display: inline-block;
+   padding: 15px 30px;
+   width: 75%;
+   font-size: 18px;
+   font-weight: bold;
+   text-align: center;
+   text-decoration: none;
+   cursor: pointer;
+   background: linear-gradient(to right, #000, #333);
+   color: #fff;
+   border: 2px solid #fff;
+   border-radius: 8px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   transition: background 0.3s, color 0.3s, border-color 0.3s, transform 0.3s ease-in-out;
+ }
+ 
+ .ButtonShowcase:hover {
+   background: linear-gradient(to right, #fff, #ccc);
+   color: #000;
+   border-color: #000;
+   transform: scale(1.05);
+ }

@@ -1,0 +1,54 @@
+.mainHero{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    }
+    
+    .backroundImage{
+    object-fit: cover;
+    width: 100%;
+    }
+    .Alltext{
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+    }
+   .Texthead{
+font-size: 136px;
+font-weight: 800;
+text-align: center;
+
+   }
+.Textdes{
+font-size: 20px;
+font-weight: 300;
+width: 80%;
+text-align: center;
+
+}
+.Textbutton{
+    font-size: 20px;
+    height:60px;
+    margin-top: 20px;
+    background-color:#242424;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 400;
+}
+.Textbutton:hover{
+    font-size: 21px;
+    font-weight: 500;
+    color: yellow;
+
+
+}

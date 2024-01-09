@@ -1,0 +1,61 @@
+.DisplayMain{
+    background-image: url('/Users/alecxfgdrfg/Desktop/bmw/public/assets/BmwLight.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.2s ease-in-out;
+    }
+    .DisplayMain:hover{
+        background-image:url('/Users/alecxfgdrfg/Desktop/bmw/public/assets/BmwDark.png') ;
+    }
+    .bmwVideo{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .Beauty{
+    font-size: 64px;
+    font-weight: 700;
+    color:white;
+    }
+    .Beast{
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 21px;
+    }
+    .Speed{
+    width: 80%;
+    align-self: center;
+    }
+    .Numbers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+    .values{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    }
+    .Divider{
+    width: 3px;
+    height: 62px;
+    color: #282828;
+    display: flex;
+    }
+    .TitleNumbers{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        padding-top: 60  px;
+        width: 80%;
+        align-items: center;
+        text-align: center;
+        margin-left:200px;
+
+    }
